@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tria Uma Travel | Simple, Quality & Satisfaction - Bali & Lombok Luxury Travel</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPrimary: '#0F4C81',
+                        brandAccent: '#00A8E8',
+                        brandLight: '#F4F8FB',
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<!-- Back to Gallery Button -->
+<a href="../index.html" class="fixed bottom-4 left-4 bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-xl px-4 py-2 text-slate-800 font-medium hover:bg-white/90 transition-all shadow-lg z-50 flex items-center space-x-2">
+    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+    Back to Gallery
+</a>
+
+    <!-- 1. TRANSPARENT NAVBAR (Fixed on top, 20% opacity look with backdrop blur) -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brandPrimary/20 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-heading text-2xl font-bold text-white tracking-wide">
+                TRIA UMA <span class="text-brandAccent">TRAVEL</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-white/90">
+                <a href="#home" class="hover:text-brandAccent transition">Home</a>
+                <a href="#events" class="hover:text-brandAccent transition">Events</a>
+                <a href="#bento" class="hover:text-brandAccent transition">Destinations & Hotels</a>
+                <a href="#mice" class="hover:text-brandAccent transition">MICE</a>
+                <a href="#testimonials" class="hover:text-brandAccent transition">Testimonials</a>
+            </nav>
+            <div>
+                <a href="#contact" class="hidden sm:inline-block px-5 py-2.5 rounded-full bg-white text-brandPrimary font-semibold text-sm hover:bg-brandAccent hover:text-white transition-all shadow-lg">
+                    Book Journey
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <!-- Background Overlay & Video/Static Image Mock -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=2000&q=80" alt="Bali & Lombok Beach Luxury" class="w-full h-full object-cover scale-105 animate-pulse duration-[10000ms]">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-900/40 to-brandPrimary/80"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-6 pt-20">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-semibold uppercase tracking-widest mb-6 border border-white/20">
+                ✨ Inbound Luxury Travel & MICE to Bali & Lombok (Indonesia)
+            </span>
+            <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Discover the World with <span class="text-brandAccent italic">Elegance</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-200 font-light max-w-2xl mx-auto mb-10">
+                Simple, Quality & Satisfaction. Curating bespoke journeys, corporate MICE events, and high-end resort stays in Bali and Lombok tailored exclusively for discerning travelers from India.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#events" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brandAccent text-white font-semibold shadow-xl hover:bg-sky-500 transition-all transform hover:-translate-y-0.5">
+                    Explore Events & Tours
+                </a>
+                <a href="#bento" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 backdrop-blur-md text-white font-semibold border border-white/20 hover:bg-white/20 transition-all">
+                    View Bali & Lombok
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. EVENT CARDS SECTION (Past, Current, Upcoming in Bali & Lombok) -->
+    <section id="events" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brandPrimary mb-4">Exclusive Travel Events</h2>
+            <p class="text-slate-600">Track our signature seasonal journeys, luxury MICE summits, and upcoming retreats in Bali & Lombok.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Past Event Card -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-slate-100 flex flex-col group hover:shadow-2xl transition-all">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" alt="Nusa Dua Wedding" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-slate-800/80 backdrop-blur-md text-white text-xs font-semibold px-3 py-1 rounded-full">Past Event</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Jan 2026</span>
+                        <h3 class="font-heading text-xl font-bold text-brandPrimary mt-1 mb-2">Bali Royal Wedding & Luxury Showcase</h3>
+                        <p class="text-slate-600 text-sm">An exclusive destination wedding exhibition hosted across 5-star beachfront resorts in Nusa Dua.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-sm text-slate-500">
+                        <span>Completed Successfully</span>
+                        <span class="text-brandPrimary font-semibold">View Highlights</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Event Card -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-2xl border-2 border-brandAccent flex flex-col group transform md:-translate-y-2">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80" alt="Lombok Retreat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-semibold px-3 py-1 rounded-full animate-pulse">Current Event • Live</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-brandAccent uppercase tracking-wider">Active Now</span>
+                        <h3 class="font-heading text-xl font-bold text-brandPrimary mt-1 mb-2">Lombok & Mandalika Investor Retreat</h3>
+                        <p class="text-slate-600 text-sm">Exclusive coastal getaway featuring luxury cliffside villas, private yachting, and island tours.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
+                        <span class="text-emerald-600 font-semibold">In Progress</span>
+                        <a href="#" class="text-brandAccent font-bold hover:underline">Join Journey &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Event Card -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-xl border border-slate-100 flex flex-col group hover:shadow-2xl transition-all">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80" alt="Ubud MICE Summit" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-brandPrimary text-white text-xs font-semibold px-3 py-1 rounded-full">Upcoming</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Nov 2026</span>
+                        <h3 class="font-heading text-xl font-bold text-brandPrimary mt-1 mb-2">Bali-India Cultural & MICE Summit</h3>
+                        <p class="text-slate-600 text-sm">Connecting luxury travel partners, corporate delegators, and premium wellness resorts in Ubud and Sanur.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-sm text-slate-500">
+                        <span>Early Bird Open</span>
+                        <span class="text-brandPrimary font-semibold">Reserve Spot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BENTO GRID / SHOWCASE SECTION (Bali & Lombok Destinations, Hotels & MICE) -->
+    <section id="bento" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-brandPrimary mb-4">Bali & Lombok Luxury Collection</h2>
+                <p class="text-slate-600">Hand-selected destinations, 5-star hotels, and corporate MICE services tailored around our core philosophy: Simple, Quality & Satisfaction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Large Card 1: Ubud Jungle & Wellness -->
+                <div class="md:col-span-2 bg-gradient-to-br from-brandPrimary to-blue-900 rounded-3xl p-8 text-white flex flex-col justify-between relative overflow-hidden shadow-xl">
+                    <div class="absolute right-0 bottom-0 opacity-15 translate-x-10 translate-y-10">
+                        <i data-lucide="trees" class="w-64 h-64"></i>
+                    </div>
+                    <div class="max-w-md relative z-10">
+                        <span class="px-3 py-1 rounded-full bg-white/20 text-xs font-semibold uppercase tracking-wider">Ubud Sanctuary & Wellness</span>
+                        <h3 class="font-heading text-3xl font-bold mt-4 mb-3">Lush Rainforest Resorts & Private Villas</h3>
+                        <p class="text-slate-200 text-sm leading-relaxed">Immerse in holistic wellness resorts, valley infinity pools, and rich Balinese heritage customized for high-end families and couples from India.</p>
+                    </div>
+                    <div class="mt-8 relative z-10">
+                        <a href="#" class="inline-flex items-center space-x-2 text-brandAccent font-semibold hover:underline">
+                            <span>Explore Ubud Luxury Stays</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Nusa Dua & Sanur Hotels -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-brandLight flex items-center justify-center text-brandPrimary mb-6">
+                            <i data-lucide="hotel" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-brandPrimary mb-2">Nusa Dua & Sanur Hotels</h3>
+                        <p class="text-slate-600 text-sm">Gated 5-star beachfront resorts, tranquil waters, and family-oriented luxury amenities.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 font-semibold text-brandPrimary text-sm">Hand-Vetted 5-Star Partners</div>
+                </div>
+
+                <!-- Card 3: MICE & Corporate Services -->
+                <div id="mice" class="bg-white rounded-3xl p-8 shadow-xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-brandLight flex items-center justify-center text-brandPrimary mb-6">
+                            <i data-lucide="briefcase" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold text-brandPrimary mb-2">Corporate MICE Services</h3>
+                        <p class="text-slate-600 text-sm">High-end conventions, gala dinners, incentive travel, and executive retreats in world-class Bali ballrooms.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 font-semibold text-brandAccent text-sm">Bespoke Event Management</div>
+                </div>
+
+                <!-- Large Card 4: Lombok & Gili Islands -->
+                <div class="md:col-span-2 bg-gradient-to-r from-sky-500 to-brandPrimary rounded-3xl p-8 text-white flex flex-col sm:flex-row items-center justify-between shadow-xl gap-6">
+                    <div>
+                        <span class="px-3 py-1 rounded-full bg-white/20 text-xs font-semibold uppercase tracking-wider">Lombok & Gili Islands</span>
+                        <h3 class="font-heading text-2xl font-bold mt-2 mb-2">Untouched Tropical Paradises</h3>
+                        <p class="text-slate-100 text-sm max-w-lg">Discover pristine turquoise bays in Mandalika, crystal clear snorkeling in the Gili Islands, and secluded beachfront eco-villas.</p>
+                    </div>
+                    <a href="#contact" class="px-6 py-3 rounded-xl bg-white text-brandPrimary font-bold shadow-lg hover:bg-slate-100 transition whitespace-nowrap">
+                        Book Lombok Tour
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div class="md:col-span-2">
+                <span class="font-heading text-2xl font-bold text-white tracking-wide">
+                    TRIA UMA <span class="text-brandAccent">TRAVEL</span>
+                </span>
+                <p class="mt-4 text-sm text-slate-400 max-w-sm">
+                    Simple, Quality & Satisfaction. Premium inbound travel agency specializing in luxury Bali & Lombok travel and corporate MICE for discerning Indian clientele.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#events" class="hover:text-white transition">Events</a></li>
+                    <li><a href="#bento" class="hover:text-white transition">Destinations & Hotels</a></li>
+                    <li><a href="#mice" class="hover:text-white transition">MICE</a></li>
+                    <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Connect</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+                    <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+                    <li><a href="#" class="hover:text-white transition">WhatsApp Concierge</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
+            &copy; 2026 Tria Uma Travel. All rights reserved. Designed with modern precision for Bali & Lombok travel.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
